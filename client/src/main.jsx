@@ -11,6 +11,7 @@ import Selection from './pages/Selection';
 import GameCQ from './pages/GameCQ'; 
 
 
+
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
+
         element: <Home />, 
       },{
         path: '/selection',
@@ -27,6 +29,7 @@ const router = createBrowserRouter([
       }, {
         path: '/gamecq',
         element: <GameCQ />
+
       },
     ],
   },
