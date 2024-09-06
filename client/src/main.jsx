@@ -5,8 +5,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import App from './App';
-import Error from './pages/Error'; //we dont have this either
-import Home from './pages/Home'; //we dont have this
+import Error from './pages/Error'; 
+import Home from './pages/Home'; 
+import Selection from './pages/Selection'; 
+import GameCQ from './pages/GameCQ'; 
 
 
 // Define the accessible routes, and which components respond to which URL
@@ -18,7 +20,13 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />, //we dont have any pages built yet
+        element: <Home />, 
+      },{
+        path: '/selection',
+        element: <Selection />
+      }, {
+        path: '/gamecq',
+        element: <GameCQ />
       },
     ],
   },
