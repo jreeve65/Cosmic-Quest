@@ -42,7 +42,7 @@ export const getMe = (token) => {
   
   // remove saved game data for a logged in user
   export const deleteSave = (gameState, token) => {
-    return fetch(`/api/users/books/${gameState}`, {
+    return fetch(`/api/users/gameState/${gameState}`, {
       method: 'DELETE',
       headers: {
         authorization: `Bearer ${token}`,

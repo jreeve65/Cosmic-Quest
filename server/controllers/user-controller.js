@@ -56,7 +56,7 @@ module.exports = {
     try {
       const newGameState = await User.findOneAndUpdate(
         { _id: user._id },
-        { $addToSet: { gameState: body } }, //what should we call this and how is it generated actually
+        { $set: { gameState: body } }, //what should we call this and how is it generated actually
         { new: true, runValidators: true }
       );
       return res.json(newGameState);
@@ -78,10 +78,10 @@ module.exports = {
   },
 
   // delete the game state`
-  async deleteSave({ user, params }, res) {
+  async deleteSave({ user }, res) {
     const updatedUser = await User.findOneAndUpdate(
       { _id: user._id },
-      { $pull: { gameState} }, //want help on this tbh
+      { $unset: { gameState: "",} }, //want help on this tbh
       { new: true }
     );
     if (!updatedUser) {
