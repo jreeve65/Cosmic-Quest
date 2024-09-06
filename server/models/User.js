@@ -28,11 +28,7 @@ const userSchema = new Schema(
         is: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/
       },
     },
-    // gameState: {
-    //   type: String,
-    //   required: true,
-    //   max_length: 50,
-    // },
+    gameState: Event,
   },
   {
     toJSON: {
