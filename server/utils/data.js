@@ -1,0 +1,23 @@
+const titles =[
+    'Begining',
+    'Aries init',
+    'Aries Scanned',
+    'Aries Proceed w/ Caution',
+    'Aries outpost discovered',
+    'Aries a close encounter',
+    'Aries cloaked',
+    'Resolve Act Aries',
+    'Hydropolis Init',
+    'Hydropolis Evidence Scan',
+    'Hydropolis Investigate shimmer',
+    'Hydropolis board vessel',
+    'Hydropolis Proceed with flashlight',
+    'Hydropolis Restrain Infected Crewmember',
+    'Crew member breaks restraints',
+    'Fight Crewmember',
+    'Resolve Act Hydropolis',
+    'Elysium init',
+    'Talk with Elysium crew',
+    'Destroy Cosmic Heart',
+
+]
