@@ -247,23 +247,4 @@ const e23CA =`Destroy the heart, causes too much conflict/holds too much power f
 const e23CB =`Take the heart to Terra Prime and complete your mission as ordered`;
 const e23CC = `Attempt to use the heart to destroy the immediate Threat!`;
 const e23CD =`Take it for yourself. The profits of selling such a device will set you up for life!`;
-//=================================
-/*begining
 
-  text: brief of mission from command.......
-  last known position of Elysieum is the Orian Star system 
-   choices: [ Jump to system, Scan for planets in Orian system, resign post, go rogue
-   
-   Scanned planets
-   
-   text: ... upon preforming a scan of the Orian Star system you are given this data: 
-        planetA: is a barren planet orbiting a dying sun( not a good canidate for Elysium to test terraforming would be a waste of resources)
-    
-        Planet Aries: Named so due to its similarities to the planet mars which orbits the star sol,  thin but present atmosphere, possiblilty of some form of water and in the habitable zone
-    there is a good chance Elysiem would have visited this planet to attempt terraforming.
-    
-    there were other celestial bodies in the scan but were not in the habitable zone of thier respective star systems.
-    
-    choices[jump to planet A, Jump to planet Aries]
-    
-    */
