@@ -87,7 +87,7 @@ button.ghost {
   width: 100%;
 }
 
-.container {
+.container-log {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -225,6 +225,7 @@ button.ghost {
   width: 40px;
 }
 
+/* styling for section page */
 .selectionTitle {
   color: white;
   display: flex;
@@ -234,6 +235,7 @@ button.ghost {
   /* font-size: 100px */
 }
 
+/* styling for error page */
 .errorTitle {
   color: white;
   display: flex;
@@ -243,11 +245,11 @@ button.ghost {
   /* font-size: 100px */
 }
 
+
 .errorMessage {
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255);
-  font-size: 100px
+  font-size: 40px
 }

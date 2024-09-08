@@ -19,7 +19,7 @@ const Home = () => {
       </video>
       <h1 class="CQfont homeTitle mb-5 mt-3">Cosmic Quest</h1>
 
-      <div class="container" id="loginForm">
+      <div class="container-log" id="loginForm">
         <div class="form-container sign-up-container">
           <form action="#" class="formBox">
             <h1 class="CQfont">Sign Up</h1>
