@@ -6,8 +6,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import App from './App';
-// import Error from './pages/Error'; 
-import Home from './pages/Home'; 
+import Error from './pages/Error'; 
+// import Home from './pages/Home'; 
 // import Selection from './pages/Selection'; 
 // import GameCQ from './pages/GameCQ'; 
 
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />, 
+        element: <Error />, 
       },
       // {
       //   path: '/selection',

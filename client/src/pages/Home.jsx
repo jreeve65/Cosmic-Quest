@@ -17,7 +17,7 @@ const Home = () => {
       <video class="video" loop="true" autoplay="autoplay" preload="true" muted>
         <source src={spaceVideo} type="video/mp4" />
       </video>
-      <h1 class="CQfont homeTitle">Cosmic Quest</h1>
+      <h1 class="CQfont homeTitle mb-5 mt-3">Cosmic Quest</h1>
 
       <div class="container" id="loginForm">
         <div class="form-container sign-up-container">
