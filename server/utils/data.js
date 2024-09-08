@@ -1,25 +1,28 @@
 const titles =[
-    'Begining',
-    'Scanned for planets in Orion star system',
-    'Aries init',
-    'Aries Scanned',
-    'Aries Proceed w/ Caution',
-    'Aries outpost discovered',
-    'Aries a close encounter',
-    'Aries cloaked',
-    'Resolve Act Aries',
-    'Hydropolis Init',
-    'Hydropolis Evidence Scan',
-    'Hydropolis Investigate shimmer',
-    'Hydropolis board vessel',
-    'Hydropolis Proceed with flashlight',
-    'Hydropolis Restrain Infected Crewmember',
-    'Crew member breaks restraints',
-    'Fight Crewmember',
-    'Resolve Act Hydropolis',
-    'Elysium init',
-    'Talk with Elysium crew',
-    'Destroy Cosmic Heart',
+    'event1',
+    'event2',
+    'event3',
+    'event4',
+    'event5',
+    'event6',
+    'event7',
+    'event8',
+    'event9',
+    'event10',
+    'event11',
+    'event12',
+    'event13',
+    'event14',
+    'event15',
+    'event16',
+    'event17',
+    'event18',
+    'event19',
+    'event20',
+    'event21',
+    'event22',
+    'event23',
+    'ending event',
 
 ]
 //===============================event text data====================================
@@ -138,22 +141,112 @@ eEndingText,
 
 //===============================Choice Data======================================
 
-//===============================begining Choice data============================= 
+//===============================e1 choice data============================= 
 const beginingC1 ='Jump to System';
 const beginingC2 ='Scan for planets in Orian system';
 const beginingC3 ='resign position this isnt what you signed up for';
 const beginingC4 ='Go rogue the allure of the  frontier is too great!';
 
-//==================================Scan planets choice data========================
+//==================================e2 Choice data========================
 const planetA = "Travel to planet Theta";
 const planetB = "Travel to planet Aries";
 
-//================================= Aries Init Choice Data==========================
-const ariesInitC1 ="Scan and Assess your surroundings";
-const ariesinitC2 ="Throw caution to the wind Elysium is just a rumor as far as anyone else knows right?";
-const ariesinitC3 ="return to orbit you dont notice anything initially.";
+//================================= e3 Choice data==========================
+const e3CA ="Scan and Assess your surroundings";
+const e3CB ="Throw caution to the wind Elysium is just a rumor as far as anyone else knows right?";
+const e3CC ="return to orbit you dont notice anything initially.";
+//==================================e4 Choices==================================
+const e4CA=`Attack, the odds are stacked against you—outnumbered and outgunned, your crew isn't equipped for what's coming. However if you're ready to risk it all, brace yourself. This is going to be one wild, brutal fight!`;
+const e4CB= `Try to find clues without letting them know you’re here. Wait & observe them`;
 
+const e4CC=`Leave the planet`;
 
+//==================================e5 Choices==============================================
+const e5CA=`Activate cloaking device and hold very still`;
+const e5CB=`Retreat`;
+const e5CC=`Get ready to call for backup and Fight`;
+const e5CD=`placeholder`;
+//=================================e6 Choices===============================================
+const e6CA=`Grab the documents & go back to your ship`;
+const e6CB=`Take a picture of the documents and write out a false translation to set this group off course`;
+const e6CC=`Steal the documents & Sabotage the camp`;
+const e6CD=`Take pictures, but destroy the documents.`;
+//================================e7 Choices=================================================
+const e7CA=`Chart Course for Hydropolis`;
+const e7CB=`Placeholder`;
+const e7CC=`placeholder`;
+const e7CD=`placeholder`;
+//=================================e8 Choices================================================
+const e8CA=`Scan the planet`;
+const e8CB=`Start planetary entry immediately`;
+const e8CC=`Placeholder`;
+const e8CD=`Give up and leave`;
+//=================================e9 Choices===============================================
+const e9CA=`Risk the probes (you will lose the ability to perform future planetary scans)`;
+const e9CB=`Reinforce the hull,  with some innovative thinking of the equipment you have on board, you should be able to complete the exhibition and mitigate some of the damages.`;
+const e9CC=`Report to high command  The Elysium was destroyed and call it a day. Scans showed no evidence of the ship's departure from this planet.`;
+const e9CD=`Throw darts at the planetary map to decide where to search next`;
+
+//==================================e10 Choices=============================================
+const e10CA=`Go North`;
+const e10CB=`Go East`;
+const e10CC=`Go West`;
+const e10CD=`Go South`;
+//==================================e11 Choices============================================
+const e11CA=`line your ships airlock with the door of the vessel and prepare to board. Maybe there are survivors or perhaps the cosmic heart is on board and salvageable.`;
+const e11CB=`return to orbit and report your findings to command you don’t want to risk further damages and possibly your crew.`;
+//==================================e12 Choices=============================================
+const e12CA= `Turn on your flashlight and try to make your way through the darkness
+`;
+const e12CB=`Nope,  this was a bad Idea Leave.
+`;
+//==================================e13 Choices=============================================
+const e13CA=`Press forward through the shuttle to gather more info`;
+const e13CB=`search through the contents of the packed cargo`;
+const e13CC=` leave there seem to be no signs of the crew or the cosmic heart anywhere.  The possibilities of why they jettisoned this craft fills you with fear.`;
+
+//==================================e14 Choices=============================================
+const e14CA=` attempt to restrain him with your crew and see if you can make sense of the mutterings`;
+const e14CB=`Place Holder`
+const e14CC=`Place Holder`
+const e14CD=`Place Holder`
+//==================================e15 Choices=============================================
+const e15CA=`Fight back!`;
+const e15CB=` try to make your way around the creature.`;
+//==================================e16 Choices=============================================
+const e16CA=`Head Back to your ship and Return to orbit`;
+const e16CB=`Continue Searching the ship. There could be valuable Loot after all!`;
+//==================================e17 Choices=============================================
+const e17CA=`Tell the Medical Team to stop treating the condition you may get mission critical info from your crewmember’s transplanted memories`;
+const e17CB=`let the med team do their job your crew has already sacrificed enough.`;
+//==================================e18 Choices=============================================
+const e18CA=` Relay to the computer the new info obtained from your encounter on the Elysium shuttle and your crewmembers new memories.`;
+const e18CB=`Boot up cosmic quest, it’s been a rough day and you need to decompress.`;
+//==================================e19 Choices=============================================
+const e19CA=` The injury and ship repairs has already delayed you . Get there as fast as possible, maybe you can still be the first group to arrive. `;
+const e19CB=` Take extra time to be prepared for a confrontation with opposing interests. The delay was likely too great and you will have to fight for the fate of the universe.`;
+
+//==================================e20 Choices=============================================
+const e20CA=`The Hostile Species does not seem to have noticed your presence yet. With the element of surprise and your ships formidable fire power you may be able to find a favorable engagement.`;
+
+const e20CB=`Slow is smooth and smooth is fast: attempt to navigate to the Elysium unseen.`;
+
+const e20CC=`You suspect the alien species is aware of your presence time is of the essence. Race to Board the Elysium`;
+
+const e20CD=`Report to command that the Elysium has already fallen into enemy hands. You are not gonna risk the lives of your crew with such a low chance of success. Personal Concequences be damned.`;
+//==================================e21 Choices=============================================
+const e21CA=`Divide and conquer some of your crew may be lost but the fate of humanity is at stake.You have to get to the Heart before the enemy!`;
+const e21CB=`Stick together and cover each other. Your chances of survival and success will likely be better working as a unit.`;
+
+//==================================e22 Choices=============================================
+const e22CA=`Ask the crew member what happened to the Elysium`;
+const e22CB=`Attack the last member of the Elysium and Secure the heart for transport.`;
+//==================================e23 Choices=============================================
+const e23CA =`Destroy the heart, causes too much conflict/holds too much power for anyone to have
+`;
+const e23CB =`Take the heart to Terra Prime and complete your mission as ordered`;
+const e23CC = `Attempt to use the heart to destroy the immediate Threat!`;
+const e23CD =`Take it for yourself. The profits of selling such a device will set you up for life!`;
 //=================================
 /*begining
 
