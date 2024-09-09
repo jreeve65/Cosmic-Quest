@@ -1,10 +1,8 @@
 {
-
-    "name": "cosmic-quest-server",
+ "name": "cosmic-quest-server",
 
     "private": true,
     "version": "0.0.0",
-    "type": "module",
     "main": "server.js",
     "scripts": {
         "start": "node server.js",
