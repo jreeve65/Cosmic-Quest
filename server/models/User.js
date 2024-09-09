@@ -22,7 +22,8 @@ const userSchema = new Schema(
       type: String,
       required: true,
       max_length: 50,
-      match:[/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/,'use a stronger password'],
+      minlength: 5,
+      // match:[/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/,'use a stronger password'],
       
     
     },
