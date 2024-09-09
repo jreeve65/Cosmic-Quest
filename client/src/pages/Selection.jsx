@@ -12,6 +12,7 @@ const Selection = () => {
   <button class="btn btn-light p-3 mt-4" type="button" style={{ fontFamily: "Orbitron" }}>Play Cosmic Quest</button>
   <button class="btn btn-light p-3" type="button" style={{ fontFamily: "Orbitron" }}>Load Previous Game</button>
   <button class="btn btn-light p-3" type="button" style={{ fontFamily: "Orbitron" }}>Play Intro Video</button>
+  <button class="btn btn-light p-3" type="button" style={{ fontFamily: "Orbitron" }}>Logout</button>
 </div>
         </div>
       </div>
