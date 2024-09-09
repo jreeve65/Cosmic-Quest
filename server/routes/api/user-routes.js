@@ -12,14 +12,14 @@ const {
 const { authMiddleware } = require('../../utils/auth');
 
 // put authMiddleware anywhere we need to send a token for verification of user
-router.route('/').post(createUser).put(authMiddleware, saveGame);
+router.route('/').post(createUser).put(saveGame);
 
 router.route('/login').post(login);
 
-router.route('/me').get(authMiddleware, getSingleUser);
+router.route('/me').get(getSingleUser);
 
-router.route('/event/:EventId').get(authMiddleware, loadGame);
-router.route('/event/:EventId').delete(authMiddleware, deleteSave);
+router.route('/event').post(loadGame);
+router.route('/event/:EventId').delete(deleteSave);
 
 
 module.exports = router;
