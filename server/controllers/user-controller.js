@@ -1,5 +1,5 @@
 // import user model
-const { User } = require("../models");
+const { User,Event } = require("../models");
 // import sign token function from auth
 const { signToken } = require("../utils/auth");
 
@@ -66,10 +66,11 @@ module.exports = {
     }
   },
 
-  async loadGame({ user }, res) {
-    console.log(user);
+  async loadGame( req, res) {
     try {
-      const gameState = await Event.findOne({ _id: user.gameState });
+      const userInfo = await User.findOne({_id:req.body.id});
+      console.log(userInfo);
+      const gameState = await Event.findOne({ _id: userInfo.gameState });
       return res.json(gameState);
     } catch (err) {
       console.log(err);
