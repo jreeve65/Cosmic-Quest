@@ -15,20 +15,20 @@ const userSchema = new Schema(
     email: {
       type: String,
       required: true,
-      validate: {
-        isEmail: true,
-      },
+      match: [/.+@.+\..+/, 'Must use a valid email address'],
       unique: true,
     },
     password: {
       type: String,
       required: true,
       max_length: 50,
-      validate: {
-        is: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/
-      },
+      match:[/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/,'use a stronger password'],
+      
+    
     },
-    gameState: Event,
+    gameState: {
+      type: String,
+    },
   },
   {
     toJSON: {
