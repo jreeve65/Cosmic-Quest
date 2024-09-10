@@ -298,3 +298,32 @@ button.ghost {
 .choice-button:active {
   transform: scale(0.95);
 }
+
+
+/* NAV BAR CSS --------------------------- */
+/* src/components/NavBar.css */
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 1rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
