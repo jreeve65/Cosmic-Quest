@@ -19,7 +19,10 @@ The fate of humanity and the universe is in your hands.
 
 ## Installation
 
-
+1. Clone project repository down into your desired directory 
+2. Open project terminal in the root level and run the command `npm install` to install the packages and dependencies. Installing in the root level will install the dependncies and packages for both the Client and Server
+3. In that same terminal, run the command `npm run develop`, this will concurrently start the Client and Server
+4. Visit the application at https://localhost:3000 
 
 ## Usage
 
