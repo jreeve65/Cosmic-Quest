@@ -27,7 +27,7 @@ const ShowGame = () => {
         const user = await response.json();
         setUserData(user);
 
-        const gameResponse = await loadGame(user);
+        const gameResponse = await loadGame(user.id);
         if (!gameResponse.ok) {
           throw new Error("something went wrong!");
         }
