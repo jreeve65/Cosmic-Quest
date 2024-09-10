@@ -42,40 +42,42 @@ const GameCQ = () => {
     
     fetchData();
   }, []);
-
   const clickOption = async (reference) => {
     const token = Auth.loggedIn() ? Auth.getToken() : null;
-    console.log(reference);
+  
     if (!token) {
       return false;
     }
-
+  
     try {
-      
-      const user= await getMe(token);
-      if(!user.ok){
-        throw new Error("could not preform request");
+      const userResponse = await getMe(token);
+      if (!userResponse.ok) {
+        throw new Error("Could not perform request");
       }
-      const userData = await user.json();
-      console.log(userData);
-      console.log(token);
-
-      saveGame({
-        id:userData._id,
+      const userData = await userResponse.json();
+  
+      const saveResponse = await saveGame({
+        id: userData._id,
         gameState: reference,
-      },token)
-
-      if (!userData.ok) {
-        throw new Error("something went wrong!");
+      }, token);
+  
+      if (!saveResponse.ok) {
+        throw new Error("Something went wrong while saving the game!");
       }
-
+  
+      // Optionally refetch the game data to reflect changes
+      const gameResponse = await loadGame(userData);
+      if (!gameResponse.ok) {
+        throw new Error("Failed to fetch updated game data");
+      }
+      const updatedGame = await gameResponse.json();
+      setGameData(updatedGame);
+  
     } catch (err) {
       console.error(err);
     }
-    console.log(gameData.title);
-  }
-
-
+  };
+  
   // If data isn't here yet, show a loading message
   if (!gameData) {
     return <h2>Loading...</h2>;
