@@ -14,12 +14,19 @@ const eventSchema = new Schema(
       required: true,
     },
     choices: [choiceSchema],
+    image: {
+      type: String,
+    },
+    narration: {
+      type: String,
+    }
   },
   {
     toJSON: {
       getters: true,
     },
-  }
+  },
+
 );
 
 const Event = model('event', eventSchema);
