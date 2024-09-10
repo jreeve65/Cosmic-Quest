@@ -28,7 +28,7 @@ const AutoSave = () => {
         }
         const userData = await user.json();
         saveGame({
-          _id:userData._id,
+          id:userData._id,
           gameState: eventRef,
         })
 
@@ -44,7 +44,7 @@ const AutoSave = () => {
       //have not written that part out
       
     };
-    autoSaveEvent();
+    autoSaveEvent();    
   });
 
   // if data isn't here yet, say so

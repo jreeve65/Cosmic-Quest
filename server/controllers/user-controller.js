@@ -52,10 +52,11 @@ module.exports = {
   // save a game to a user's `gamestate` field 
   // user comes from `req.user` created in the auth middleware function
   async saveGame(req, res) {
+    console.log(req.body);
     try {
       const newGameState = await User.findOneAndUpdate(
         { _id: req.body.id},
-        { $set: { gameState: body } }, //what should we call this and how is it generated actually
+        { $set: { gameState: req.body.gameState } }, //what should we call this and how is it generated actually
         { new: true, runValidators: true }
       );
       return res.json(newGameState);
