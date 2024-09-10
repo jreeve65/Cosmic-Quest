@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getMe, loadGame } from "../services/API";
+import { getMe,saveGame, loadGame } from "../services/API";
 import Auth from "../utils/auth";
 import { Container, Card, Button, Row, Col } from "react-bootstrap";
 
@@ -10,7 +10,9 @@ const AutoSave = () => {
   // use this to determine if `useEffect()` hook needs to run again
 
   useEffect(() => {
-    const autoSaveEvent = async (nextEvent) => {
+    /*drill into the choice that is selected and pass the in
+   the eventRef property of choice as a parameter of autoSaveEvent function */
+    const autoSaveEvent = async (eventRef) => {
       //these dont exist yet so im using placeholder words
       const token = Auth.loggedIn() ? Auth.getToken() : null;
 
@@ -19,7 +21,16 @@ const AutoSave = () => {
       }
 
       try {
-        const response = await saveGame(nextEvent, token);
+        
+        const user= await getMe(token);
+        if(!user.ok){
+          throw new Error("could not preform request");
+        }
+        const userData = await user.json();
+        saveGame({
+          _id:userData._id,
+          gameState: eventRef,
+        })
 
         if (!response.ok) {
           throw new Error("something went wrong!");

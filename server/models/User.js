@@ -29,6 +29,7 @@ const userSchema = new Schema(
     },
     gameState: {
       type: String,
+      default: '66df29641694536d646621e5',
     },
   },
   {
