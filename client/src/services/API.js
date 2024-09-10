@@ -29,7 +29,7 @@ export const getMe = (token) => {
   };
   
   // save book data for a logged in user
-  export const saveGame = (game) => {
+  export const saveGame = (game, token) => {
     return fetch('/api/users', {
       method: 'PUT',
       headers: {
@@ -61,5 +61,6 @@ export const getMe = (token) => {
           body: JSON.stringify(gameState),
         });
       };
+  
   
   
