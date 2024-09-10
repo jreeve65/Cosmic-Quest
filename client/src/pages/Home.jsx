@@ -3,8 +3,10 @@ import React, { useEffect } from "react";
 import { createUser, loginUser } from "../services/API";
 import Auth from "../services/auth";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
   const [userFormData, setUserFormData] = useState({
     username: "",
     email: "",
@@ -53,10 +55,14 @@ const Home = () => {
         if (!response.ok) {
           alert("Please try again");
           throw new Errow("Something went wrong!");
+        } else {
+          const { token, user } = await response.json();
+          console.log(user);
+          Auth.login(token);
+      
+          navigate('/selection');
         }
-        const { token, user } = await response.json();
-        console.log(user);
-        Auth.login(token);
+       
       } catch (error) {}
     }
   };
