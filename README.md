@@ -8,7 +8,7 @@ Your journey will take you to distant planets, each with its own unique challeng
 
 The fate of humanity and the universe is in your hands.
 
-## Table of Contents 
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -19,10 +19,10 @@ The fate of humanity and the universe is in your hands.
 
 ## Installation
 
-1. Clone project repository down into your desired directory 
+1. Clone project repository down into your desired directory
 2. Open project terminal in the root level and run the command `npm install` to install the packages and dependencies. Installing in the root level will install the dependncies and packages for both the Client and Server
 3. In that same terminal, run the command `npm run develop`, this will concurrently start the Client and Server
-4. Visit the application at https://localhost:3000 
+4. Visit the application at https://localhost:3000
 
 ## Usage
 
@@ -30,27 +30,27 @@ Cosmic Quest is a text-based Scifi Video game using restful API.
 
 ![](./client/src/assets/images/CosmicQuest-ezgif.com-video-to-gif-converter.gif)
 
-
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+GitHub: [Heatherellen Strain](https://github.com/hestrain)
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+GitHub: [Amanda Changa](https://github.com/mandi7469)
 
-If you followed tutorials, include links to those here as well.
+GitHub: [Jordan Reeve](https://github.com/jreeve65)
 
+GitHub: [James Parker](https://github.com/JamesWilliamParker)
+
+Cosmic Quest: [Deployed Website Link]()
 
 ## Built With
 
-[![Static Badge](https://img.shields.io/badge/GitHub-mandi7469-darkgreen)](https://github.com/mandi7469) [![Static Badge](https://img.shields.io/badge/React-18.3.1-blue%20)](https://www.npmjs.com/package/react) [![Static Badge](https://img.shields.io/badge/Vite-5.4.1-purple)](https://www.npmjs.com/package/vite) [![Static Badge](https://img.shields.io/badge/Bootstrap-5.2.3-red)](https://www.npmjs.com/package/bootstrap) 
-
+[![Static Badge](https://img.shields.io/badge/GitHub-mandi7469-darkgreen)](https://github.com/mandi7469) [![Static Badge](https://img.shields.io/badge/React-18.3.1-blue%20)](https://www.npmjs.com/package/react) [![Static Badge](https://img.shields.io/badge/Vite-5.4.1-purple)](https://www.npmjs.com/package/vite) [![Static Badge](https://img.shields.io/badge/Bootstrap-5.2.3-red)](https://www.npmjs.com/package/bootstrap)
 
 ## How to Contribute
 
 If you would like to contribute, please refer to the Contributor Covenant guidelines on how to do so.
 
 The [Contributor Covenant](https://www.contributor-covenant.org/).
-
 
 ## License
 
