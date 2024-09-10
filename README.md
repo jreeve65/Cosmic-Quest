@@ -26,13 +26,10 @@ The fate of humanity and the universe is in your hands.
 
 ## Usage
 
-Text-based Scifi Video game using restful API.
+Cosmic Quest is a text-based Scifi Video game using restful API.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+![](./client/src/assets/images/CosmicQuest-ezgif.com-video-to-gif-converter.gif)
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
 
 ## Credits
 
