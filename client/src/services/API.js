@@ -29,14 +29,14 @@ export const getMe = (token) => {
   };
   
   // save book data for a logged in user
-  export const saveGame = (gameState, token) => {
+  export const saveGame = (game) => {
     return fetch('/api/users', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
         authorization: `Bearer ${token}`,
       },
-      body: JSON.stringify(gameState),
+      body: JSON.stringify(game),
     });
   };
   
