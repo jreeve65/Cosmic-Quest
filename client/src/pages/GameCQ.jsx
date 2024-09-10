@@ -25,7 +25,7 @@ const GameCQ = () => {
         const user = await response.json();
         setUserData(user);
 
-        const gameResponse = await loadGame(user.id, token);
+        const gameResponse = await loadGame(user);
         if (!gameResponse.ok) {
           throw new Error("Failed to fetch game data");
         }

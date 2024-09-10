@@ -2,7 +2,7 @@ import spaceVideo from "../assets/videos/space.mp4";
 import React, { useEffect, useState } from "react";
 import { createUser, loginUser } from "../services/API";
 import Auth from "../services/auth";
-import { useState } from "react";
+
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {

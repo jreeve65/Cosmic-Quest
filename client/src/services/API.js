@@ -53,7 +53,7 @@ export const getMe = (token) => {
     // load game data for a logged in user
     export const loadGame = (gameState, token) => {
         return fetch('/api/users/event', {
-          method: 'GET',
+          method: 'POST',
           headers: {
             'Content-Type': 'application/json',
             authorization: `Bearer ${token}`,
