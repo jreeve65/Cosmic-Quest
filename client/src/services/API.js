@@ -42,7 +42,7 @@ export const getMe = (token) => {
   
   // remove saved game data for a logged in user
   export const deleteSave = (gameState, token) => {
-    return fetch(`/api/users/gameState/${gameState}`, {
+    return fetch(`/api/users/event/${gameState}`, {
       method: 'DELETE',
       headers: {
         authorization: `Bearer ${token}`,
@@ -52,7 +52,7 @@ export const getMe = (token) => {
 
     // load game data for a logged in user
     export const loadGame = (gameState, token) => {
-        return fetch('/api/users', {
+        return fetch('/api/users/event', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
