@@ -25,7 +25,7 @@ const GameCQ = () => {
         const user = await response.json();
         setUserData(user);
 
-        const gameResponse = await loadGame(user.id, token);
+        const gameResponse = await loadGame(user);
         if (!gameResponse.ok) {
           throw new Error("Failed to fetch game data");
         }
@@ -48,7 +48,6 @@ const GameCQ = () => {
   return (
     <div className="text-light bg-dark p-5">
       <Container>
-        <h1>{gameData.title}</h1>
         <p>{gameData.text}</p>
         <Row>
           {gameData.choices.map((choice) => (
