@@ -1,5 +1,5 @@
 import spaceVideo from "../assets/videos/space.mp4";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { createUser, loginUser } from "../services/API";
 import Auth from "../services/auth";
 import { useState } from "react";
@@ -29,7 +29,6 @@ const Home = () => {
         if (!response.ok) {
           alert("Please try again");
           throw new Error("Something went wrong!");
-          
         } else {
           const { token, user } = await response.json();
           console.log(user);
@@ -54,15 +53,13 @@ const Home = () => {
         console.log(response);
         if (!response.ok) {
           alert("Please try again");
-          throw new Errow("Something went wrong!");
+          throw new Error("Something went wrong!");
         } else {
           const { token, user } = await response.json();
           console.log(user);
           Auth.login(token);
-      
           navigate('/selection');
         }
-       
       } catch (error) {}
     }
   };
@@ -85,20 +82,20 @@ const Home = () => {
 
   return (
     <div>
-      <video class="video" loop="true" autoPlay="autoPlay" preload="true" muted>
+      <video className="video" loop autoPlay preload="true" muted>
         <source src={spaceVideo} type="video/mp4" />
       </video>
-      <h1 class="CQfont homeTitle mb-5 mt-3">Cosmic Quest</h1>
+      <h1 className="CQfont homeTitle mb-5 mt-3">Cosmic Quest</h1>
 
-      <div class="container" id="loginForm">
-        <div class="form-container sign-up-container">
-          <form class="formBox">
-            <h1 class="CQfont">Sign Up</h1>
+      <div className="container" id="loginForm">
+        <div className="form-container sign-up-container">
+          <form className="formBox">
+            <h1 className="CQfont">Sign Up</h1>
 
             <input
               type="text"
               placeholder="Username"
-              class="inputField"
+              className="inputField"
               name="username"
               value={userFormData.username}
               onChange={handleInputChange}
@@ -110,7 +107,7 @@ const Home = () => {
               name="email"
               value={userFormData.email}
               onChange={handleInputChange}
-              class="inputField"
+              className="inputField"
               required
             />
             <input
@@ -119,30 +116,30 @@ const Home = () => {
               name="password"
               value={userFormData.password}
               onChange={handleInputChange}
-              class="inputField"
+              className="inputField"
               required
             />
             <button
               onClick={handleSignUp}
-              class="CQfont mt-3 formButton"
+              className="CQfont mt-3 formButton"
               id="signUpForm"
             >
               Sign Up
             </button>
           </form>
         </div>
-        <div class="form-container sign-in-container">
-          <form action="#" class="formBox">
-            <h1 class="CQfont">Login</h1>
+        <div className="form-container sign-in-container">
+          <form action="#" className="formBox">
+            <h1 className="CQfont">Login</h1>
 
-            <span class="CQfont formText">or sign up to create an account</span>
+            <span className="CQfont formText">or sign up to create an account</span>
             <input
               type="email"
               placeholder="Email"
               name="email"
               onChange={handleInputChange}
               value={userFormData.email}
-              class="inputField"
+              className="inputField"
               required
             />
             <input
@@ -151,31 +148,31 @@ const Home = () => {
               name="password"
               onChange={handleInputChange}
               value={userFormData.password}
-              class="inputField"
+              className="inputField"
               required
             />
             <button
               onClick={handleLogin}
-              class="CQfont mt-3 formButton"
+              className="CQfont mt-3 formButton"
               id="signInForm"
             >
               Login
             </button>
           </form>
         </div>
-        <div class="overlay-container">
-          <div class="overlay">
-            <div class="overlay-panel overlay-left">
-              <h1 class="CQfont">Welcome Back!</h1>
+        <div className="overlay-container">
+          <div className="overlay">
+            <div className="overlay-panel overlay-left">
+              <h1 className="CQfont">Welcome Back!</h1>
               Login to play
-              <button class="ghost CQfont mt-3 formButton" id="signIn">
+              <button className="ghost CQfont mt-3 formButton" id="signIn">
                 Login
               </button>
             </div>
-            <div class="overlay-panel overlay-right">
-              <h1 class="CQfont">Hello, Friend!</h1>
+            <div className="overlay-panel overlay-right">
+              <h1 className="CQfont">Hello, Friend!</h1>
 
-              <button class="ghost CQfont mt-3 formButton" id="signUp">
+              <button className="ghost CQfont mt-3 formButton" id="signUp">
                 Sign Up
               </button>
             </div>
