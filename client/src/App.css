@@ -252,3 +252,49 @@ button.ghost {
   align-items: center;
   font-size: 40px;
 }
+
+
+/* Game Page CSS ----------------------------------------------------*/
+.game-container {
+  background-color: var(--space-blue);
+  color: var(--silver);
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.event-title {
+  margin-bottom: 20px;
+}
+
+.event-text {
+  margin-bottom: 30px;
+}
+
+.choices-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choice-button {
+  background-color: var(--nebula-pink);
+  color: var(--silver);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.choice-button:hover {
+  background-color: var(--celestial-purple);
+}
+
+.choice-button:active {
+  transform: scale(0.95);
+}
