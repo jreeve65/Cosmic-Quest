@@ -48,7 +48,6 @@ const GameCQ = () => {
   return (
     <div className="text-light bg-dark p-5">
       <Container>
-        <h1>{gameData.title}</h1>
         <p>{gameData.text}</p>
         <Row>
           {gameData.choices.map((choice) => (

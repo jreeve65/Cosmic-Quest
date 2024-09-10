@@ -13,7 +13,7 @@ const AutoSave = () => {
     /*drill into the choice that is selected and pass the in
    the eventRef property of choice as a parameter of autoSaveEvent function */
     const autoSaveEvent = async (eventRef) => {
-      //these dont exist yet so im using placeholder words
+      
       const token = Auth.loggedIn() ? Auth.getToken() : null;
 
       if (!token) {
