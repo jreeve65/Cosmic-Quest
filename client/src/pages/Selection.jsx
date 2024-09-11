@@ -1,4 +1,4 @@
-import spaceVideo from "../assets/videos/space.mp4";
+
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -30,9 +30,7 @@ const Selection = () => {
 
   return (
     <div>
-      <video className="video" loop autoPlay muted>
-        <source src={spaceVideo} type="video/mp4" />
-      </video>
+      
       <h1 className="CQfont selectionTitle mb-5 mt-3">Cosmic Quest</h1>
       <div className="container-fluid">
         <div className="row">

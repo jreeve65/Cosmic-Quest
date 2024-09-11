@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { getMe, loadGame, saveGame } from "../services/API";
 import Auth from "../../src/services/auth";
 import { Container, Card, Button, Row, Col } from "react-bootstrap";
-import spaceVideo from "../assets/videos/space.mp4";
 
 const GameCQ = () => {
   const [userData, setUserData] = useState({});
@@ -92,11 +91,8 @@ const GameCQ = () => {
 
   return (
     <div className="game-container">
-      <video className="background-video" loop autoPlay muted>
-        <source src={spaceVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <Container className="content-container">
+    
+      <div className="content-container">
         {/* Display the current game text */}
         <p className="event-text">{gameData.text}</p>
 
@@ -117,22 +113,17 @@ const GameCQ = () => {
           </div>
         )}
 
-        <Row className="choices-container">
+        <div className="choices-container">
           {/* Map over choices, and handle clicks */}
           {gameData.choices.map((choice) => (
-            <Col key={choice.choiceId}>
-              <Card>
-                <Card.Body>
-                  {/* Button sends the choice ID when clicked */}
-                  <Button className="choice-button" variant="primary" onClick={() => clickOption(choice.eventRef)}>
-                    {choice.choice}
-                  </Button>
-                </Card.Body>
-              </Card>
-            </Col>
+            <div key={choice.choiceId} className="choice-button-wrapper">
+              <button className="choice-button" onClick={() => clickOption(choice.eventRef)}>
+                {choice.choice}
+              </button>
+            </div>
           ))}
-        </Row>
-      </Container>
+        </div>
+      </div>
     </div>
   );
 };
