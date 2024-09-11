@@ -44,7 +44,10 @@ Cosmic Quest: [Deployed Website Link]()
 
 ## Built With
 
-[<img height="50" width="50" align="center" alt="MongoDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg">](https://www.mongodb.com/docs/compass/current/) [<img height="50" width="50" align="center" alt="Express" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg">](https://expressjs.com/en/starter/installing.html) [<img height="50" width="50" align="center" alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg">](https://react.dev/) [<img height="50" width="50" align="center" alt="Nodejs" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg">](https://nodejs.org/en)
+[<img height="50" width="50" align="center" alt="MongoDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg">](https://www.mongodb.com/docs/compass/current/) 
+[<img height="50" width="50" align="center" alt="Express" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg">](https://expressjs.com/en/starter/installing.html)
+[<img height="50" width="50" align="center" alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg">](https://react.dev/)
+[<img height="50" width="50" align="center" alt="Nodejs" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg">](https://nodejs.org/en)
 
 
 ## How to Contribute
