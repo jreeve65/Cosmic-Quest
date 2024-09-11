@@ -1,4 +1,4 @@
-![alt text](./client/src/assets/images/logo.png)
+![alt text](./client/src/assets/images/fullLogo.png)
 
 ## Description
 
