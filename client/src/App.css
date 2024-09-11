@@ -258,13 +258,15 @@ button.ghost {
 html, body {
   height: 100%;
   margin: 0;
-  overflow: hidden; /* Prevents scrolling, ensuring video fills the viewport */
+  /* overflow: hidden;  */
+  /* Prevents scrolling, ensuring video fills the viewport */
 }
 
 .game-container {
   position: relative;
-  height: 100vh; /* Ensures the container fills the viewport height */
-  color: var(black));
+  /* height: 100vh;  */
+  /* Ensures the container fills the viewport height */
+  color: black;
   font-family: 'Orbitron', sans-serif;
   text-align: center;
   padding: 20px;
