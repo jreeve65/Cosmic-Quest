@@ -543,5 +543,68 @@
     ],
     "image":"",
     "narration":""
+  },
+  {
+    "title":"Aries event 4 attack continue as planned",
+    "text":"You determine that sticking to the plan is your team’s best chance of survival. Amidst the chaos, you and your remaining crew member push forward, focusing on the immediate objective while trying to block out the carnage around you. The steady thud of the machine gunner’s fire provides a brief shield, but it abruptly stops as he begins reloading, creating a critical moment of vulnerability.\nThe lull in suppressive fire doesn’t go unnoticed by the aliens. They seize the opportunity to counterattack, their disciplined formations breaking as they burst from cover and launch a coordinated volley of fire. The sudden shift in their tactics overwhelms you./nYour heart sinks as you watch in horror as your crewmate is disintegrated by the intense barrage. The alien firepower is brutal and precise, leaving no room for error. Desperation grips you as you scramble for cover, firing back in a frantic attempt to slow their advance. Your shots seem to bounce harmlessly off their hardened skin, proving ineffective against their resilience.\nThe enemy forces press forward, their renewed assault intensifying the pressure on your position. The machine gunner’s reload is agonizingly slow, and with every second, the aliens close in. You can see their determination in contrast to your mounting despair. \nFacing this grim reality, you realize that the aliens are regaining control of the battlefield. With your options dwindling, you scan for any way to turn the tide or at least mitigate the damage. Your grip tightens around your weapon as you prepare to defend your position, bracing for the next wave of assault, determined to hold the line and protect what’s left of your squad.",
+    "choices":[
+      {
+        "choice":"Prep your grenade and wait for your machineguner to open fire and consoldate their forces",
+        "eventRef":""
+      },
+      {
+        "choice":"Try and reach your flanker with both your support attackers gone perhaps consolidating your forces is the best chance to survive",
+        "eventRef":""
+      },
+      {
+        "choice":"Retreat the enemy force is breaking through your position",
+        "eventRef":""
+      }
+    ],
+    "image":"",
+    "narration":""
+  },
+  {
+    "title":"Aries event 4 attack grenade thrown",
+    "text":"You notice that you’re now within grenade range and prepare to deploy it. Waiting for the perfect moment, you keep your eyes on the machine gunner, who has just resumed firing. The rhythmic thud of the machine gun re-engaging causes the enemy forces to consolidate and scramble for cover amidst the chaos. You see your opportunity as the aliens cluster together, trying to shield themselves from the renewed barrage. With a deep breath, you hurl the grenade into the center of the enemy formation and dive behind cover to shield yourself from the impending explosion. The grenade detonates with a deafening boom, and you feel the shockwave penetrate to your core. The immediate aftermath is a heavy silence that blankets the battlefield.Cautiously, you peek around your cover and are met with a grim sight: the area where the grenade exploded is a scene of devastation. The carnage is overwhelming, and a strange mix of relief and horror washes over you as you take in the extent of the destruction.As you traverse the remains of the battlefield, you head towards the area where you last saw your flanking crew. One of them is administering first aid to the other, who is writhing in pain. The sight is both a relief and a source of concern. The crew member giving aid spots you and urgently motions for you to assist.",
+    "choices":[
+      {
+        "choice":"Rush in and begin helping to stabalize your wounded crew-member",
+        "eventRef":""
+      },
+      {
+        "choice":"secure the area",
+        "eventRef":""
+      }
+    ],
+    "image":"",
+    "narration":""
+  },
+  {
+    "title":"Aries event 4 attack success",
+    "text":"You acknowledge the crew member’s urgent motion with a nod, signaling that you’ll assist them shortly. First, you take a moment to scan the battlefield, keeping your weapon at the ready as you scan for any surviving threats. The devastation around you is stark, but the danger isn't over yet. After securing your immediate flanks, you cautiously make your way toward the area where your wounded crew members are. As you approach, your senses are heightened. Out of the corner of your eye, you spot shadows shifting behind a barricade. Instinctively, you snap your weapon in that direction just in time to see an alien charging towards you. You brace yourself, gathering your composure, and squeeze the trigger. Your shots are true, and with a satisfying pop, the alien collapses as your bullets penetrate its vulnerable tissue. Turning back to your crew, you see the crew member who was administering first aid standing with their head hung low, shaking in disappointment. The scene is grim as you realize the other crew member remains motionless. “He’s gone,” the crew member who was providing aid says quietly. Determined to find any remaining clues, you begin searching the enemy camp. Among the wreckage, you discover a set of damaged documents. Although the documents are partly destroyed, you can make out some readable text amidst the alien code. There are attempts at translation, suggesting that these documents might hold valuable information related to the Elysium. You recognize the significance of this find. With the translator on your ship, you have a chance to decipher the documents. what will you do?",
+    "choices":[
+      {
+        "choice":"fabricate false documents to mislead any remaining enemy away from the Elysium and head back to your ship",
+        "eventRef":""
+
+      },
+      {
+        "choice":"continue to search the area there may be other things of value here",
+        "eventRef":""
+      }
+    ],
+    "image":"",
+    "narration":""
+  },
+  {
+    "title":"put documents in ship translator after battle",
+    "text":" Back at your ship, you input the damaged documents into your onboard translator. Although much of the data is corrupted due to the damage, the device successfully reveals that the documents contain crucial information pointing to a new location: Planet Hydropolis. Armed with this new intelligence, how do you proceed?",
+    "choices":[
+      {
+        "choice":"Chart a course for Hydropolis.",
+        "eventRef":"66df34eb0ecb4efc2bd092e4"
+      }
+    ]
   }
 ]
