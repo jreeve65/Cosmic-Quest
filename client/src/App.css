@@ -264,7 +264,7 @@ html, body {
 .game-container {
   position: relative;
   height: 100vh; /* Ensures the container fills the viewport height */
-  color: var(--silver);
+  color: var(black));
   font-family: 'Orbitron', sans-serif;
   text-align: center;
   padding: 20px;
@@ -338,8 +338,6 @@ html, body {
   text-align: center;
   margin: 20px 0;
 }
-
-
 
 
 /* NAV BAR CSS ------------------------------- */
@@ -478,4 +476,3 @@ html, body {
     0 0 30px #BF360C,
     0 0 60px #BF360C;
 }
-

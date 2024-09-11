@@ -77,6 +77,14 @@ const GameCQ = () => {
     }
   };
 
+  // Reload the audio when the narration changes
+  useEffect(() => {
+    const audioElement = document.getElementById("game-audio");
+    if (audioElement) {
+      audioElement.load();  // Reload the audio with the new source
+    }
+  }, [gameData?.narration]);
+
   // If data isn't here yet, show a loading message
   if (!gameData) {
     return <h2>Loading...</h2>;
@@ -102,8 +110,8 @@ const GameCQ = () => {
         {/* Play audio if provided */}
         {gameData.narration && (
           <div className="audio-container">
-            <audio controls>
-              <source src={gameData.narration} type="audio/mpeg" />
+            <audio controls id="game-audio" key={gameData.narration}>
+              <source src={`${gameData.narration}?t=${new Date().getTime()}`} type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
           </div>
