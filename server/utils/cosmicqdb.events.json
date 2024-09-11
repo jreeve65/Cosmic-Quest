@@ -496,5 +496,52 @@
     "choices": [],
     "image": "../assets/CQ-Content/24th End/CQ24-Img.png",
     "narration": "../assets/CQ-Content/24th End/CQ-24th.mp3"
+  },
+  {
+    "title":"Death Screen",
+    "text":"“The oldest and strongest human emotion is fear, and the oldest and strongest kind of fear is fear of the unknown.” – H.P. Lovecraft  As you slowly feel your connection to this reality slipping away, you can’t help but wonder what awaits you beyond… the void. \n\nYou Died.",
+    "choices":[],
+    "image":"",
+    "narration":""
+  },
+  {
+    "title":"Aries event 4 attack",
+    "text":"After a tense deliberation and despite your team's pleas for a more cautious approach, you make the decisive call. Believing that eliminating the opposing force is crucial for the success of your mission, you order your crew to prepare for an aggressive stance.\n“Set up the machine gun,” you command, your voice steady despite the adrenaline coursing through you. “We need to take them down before they can regroup.”\nYour gunner swiftly and efficiently positions the weapon, and the rhythmic clatter of the machine gun soon fills the air. The first few bursts of fire are met with cries of surprise from the alien forces below. Several of the enemy infantry go down under the relentless barrage, their attempts to return fire mostly futile as they scramble for cover amidst the scattered debris.\nThe alien soldiers, now fully alert and under heavy attack, scatter in a desperate attempt to evade the gunfire. You see them diving behind rocks and makeshift barriers, their movements precise and coordinated, suggesting they are well-trained and highly disciplined. The once orderly formation has now dissolved into chaos, and you realize that the immediate threat has been partially neutralized—but the fight is far from over.\nYour crew, watching the engagement from their positions, waits for your next command. The alien forces are regrouping, and it’s clear that they are preparing to retaliate. You have a few options to consider.",
+    "choices":[
+      {
+        "choice": "Pincer manuver send two to flank while you and another crew-member advance on the position.",
+        "eventRef":""
+      },
+      {
+        "choice":"Hold your position the high ground should mean you have the advantage",
+        "eventRef":""
+      },
+      {
+        "choice":"full frontal assault. Take sieze the opportunity to try and finish the fight quickly while the aliens are regrouping.",
+        "eventRef":""
+      }
+    ],
+    "image":"",
+    "narration":""
+  },
+  {
+    "title":"Aries event 4 attack Pincer",
+    "text":"Determined to exploit the chaos you’ve created, you command a pincer maneuver. “Two of you, flank the enemy position while the rest of us advance. Move quickly and stay sharp!”\nThe two chosen crew members swiftly maneuver to the flanks, their movements precise but cautious. As they approach the enemy’s side, one of them is suddenly caught in the crossfire. A burst of alien fire hits him, and he collapses, his cries of pain swallowed by the cacophony of battle.\n“Damn it!” your remaining flanker calls out, taking cover behind a nearby rock and continuing to fire at the aliens to keep their attention diverted. Despite their best efforts, the alien forces show remarkable resilience to your gunfire. Their natural resistance allows them to withstand the barrages that would incapacitate most foes.\nMeanwhile, you and your other crew member advance under the covering fire provided by the machine gunner. The rhythmic thud of the machine gun is a constant presence, but it seems to have less impact on the aliens than expected. They are managing to hold their ground and resist the suppression, their movements more deliberate and coordinated despite the ongoing fire.\nAs you push forward, you recall the adage: “I’m up, he sees me, I’m down.” It’s a cadence to help reduce the risk injury while advancing on the position. You and your companion move from cover to cover, using the machine gun’s fire as a shield while advancing toward the enemy position.\nThe alien soldiers, though partially disrupted, are far from crippled. Their resistance to your munitions allows them to regroup and mount a more effective defense. Their formation, though initially thrown into disarray, is beginning to solidify again as they adapt to the situation.\nYou and your crew member manage to get closer, but the alien forces are proving more resilient than anticipated. With the machine gunner's fire maintaining pressure, but not fully breaking their defenses, you face a crucial decision:",
+    "choices":[
+      {
+        "choice":"move continue to advance.  You are still out of range to deploy a grenade.",
+        "eventRef":""
+      },
+      {
+        "choice":"Support the Flanker: Focus on providing additional support to the remaining flanker and attempt a coordinated push with them. This could help shift the battle in your favor possibly saving your wounded but might expose you to more danger.",
+        "eventRef":""
+      },
+      {
+        "choice":"Regroup and Reassess: Pull back slightly to reassess the situation and consolidate your forces. This would allow you to recover from the ongoing resistance and plan a more strategic approach.",
+        "eventRef":""
+      }
+    ],
+    "image":"",
+    "narration":""
   }
 ]
