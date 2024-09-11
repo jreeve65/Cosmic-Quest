@@ -1,4 +1,15 @@
-![alt text](./client/src/assets/images/fullLogo.png)
+<div align="center">
+
+![Cosmic Quest](./client/src/assets/images/fullLogo.png)
+
+
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+[![Contributors](https://img.shields.io/github/contributors/jreeve65/Cosmic-Quest.svg?style=plastic&logo=appveyor)](https://github.com/jreeve65/Cosmic-Quest/graphs/contributors)
+[![Forks](https://img.shields.io/github/forks/jreeve65/Cosmic-Quest.svg?style=plastic&logo=appveyor)](https://github.com/jreeve65/Cosmic-Quest/network/members)
+[![Stargazers](https://img.shields.io/github/stars/jreeve65/Cosmic-Quest.svg?style=plastic&logo=appveyor)](https://github.com/jreeve65/Cosmic-Quest/stargazers)
+[![Issues](https://img.shields.io/github/issues/jreeve65/Cosmic-Quest.svg?style=plastic&logo=appveyor)](https://github.com/jreeve65/Cosmic-Quest/issues)
+
+</div>
 
 ## Description
 
@@ -8,16 +19,30 @@ Your journey will take you to distant planets, each with its own unique challeng
 
 The fate of humanity and the universe is in your hands.
 
-## Table of Contents
+[Play Now!](placeholder-deployed-url)
 
+## Table of Contents
+- [About the Project](#about-the-project)
+- [Built With](#built-with)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
-- [Built With](#built-with)
 - [Contribute](#how-to-contribute)
 - [License](#license)
 
+## About the Project
+
+### Built With
+
+[<img height="50" width="50" align="center" alt="MongoDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg">](https://www.mongodb.com/docs/compass/current/) 
+[<img height="50" width="50" align="center" alt="Express" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg">](https://expressjs.com/en/starter/installing.html)
+[<img height="50" width="50" align="center" alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg">](https://react.dev/)
+[<img height="50" width="50" align="center" alt="Nodejs" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg">](https://nodejs.org/en)
+
 ## Installation
+You do not have to install Cosmic Quest to play the game, you can visit it live online at [This Link](placeholder-deployed-url)
+
+However, if you'd like to ruin it locally instead, please follow the below instructions: 
 
 1. Clone project repository down into your desired directory
 2. Open project terminal in the root level and run the command `npm install` to install the packages and dependencies. Installing in the root level will install the dependncies and packages for both the Client and Server
@@ -32,22 +57,16 @@ Cosmic Quest is a text-based Scifi Video game using restful API.
 
 ## Credits
 
-GitHub: [Heatherellen Strain](https://github.com/hestrain)
-
 GitHub: [Amanda Changa](https://github.com/mandi7469)
 
-GitHub: [Jordan Reeve](https://github.com/jreeve65)
+GitHub: [HeatherEllen Strain](https://github.com/hestrain)
 
 GitHub: [James Parker](https://github.com/JamesWilliamParker)
 
-Cosmic Quest: [Deployed Website Link]()
+GitHub: [Jordan Reeve](https://github.com/jreeve65)
 
-## Built With
+Cosmic Quest: [Deployed Website Link](placeholder-deployed-url)
 
-[<img height="50" width="50" align="center" alt="MongoDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg">](https://www.mongodb.com/docs/compass/current/) 
-[<img height="50" width="50" align="center" alt="Express" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg">](https://expressjs.com/en/starter/installing.html)
-[<img height="50" width="50" align="center" alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg">](https://react.dev/)
-[<img height="50" width="50" align="center" alt="Nodejs" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg">](https://nodejs.org/en)
 
 
 ## How to Contribute
@@ -57,5 +76,7 @@ If you would like to contribute, please refer to the Contributor Covenant guidel
 The [Contributor Covenant](https://www.contributor-covenant.org/).
 
 ## License
+
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
 This project is licensed under the ISC license.

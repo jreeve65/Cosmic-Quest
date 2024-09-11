@@ -33,8 +33,8 @@
         "eventRef": "66df34eb0ecb4efc2bd092df"
       }
     ],
-    "image": "../assets/CQ-Content/2nd/SQ2-Img.png",
-    "narration": "../assets/CQ-Content/2nd/CQ-2nd.mp3"
+    "image": "/public/CQ-Content/2nd/SQ2-Img.png",
+    "narration": "/public/CQ-Content/2nd/CQ-2nd.mp3"
   },
   {
     "_id": {
@@ -56,8 +56,8 @@
         "eventRef": ""
       }
     ],
-    "image": "../assets/CQ-Content/3rd/CQ3-Img.png",
-    "narration": "../assets/CQ-Content/3rd/CQ-3rd.mp3"
+    "image": "/public/CQ-Content/3rd/CQ3-Img.png",
+    "narration": "/public/CQ-Content/3rd/CQ-3rd.mp3"
   },
   {
     "_id": {
@@ -79,8 +79,8 @@
         "eventRef": ""
       }
     ],
-    "image": "../assets/CQ-Content/4th/CQ4-Img.png",
-    "narration": "../assets/CQ-Content/4th/CQ-4th.mp3"
+    "image": "/public/CQ-Content/4th/CQ4-Img.png",
+    "narration": "/public/CQ-Content/4th/CQ-4th.mp3"
   },
   {
     "_id": {
@@ -102,8 +102,8 @@
         "eventRef": ""
       }
     ],
-    "image": "../assets/CQ-Content/5th/CQ5-Img.png",
-    "narration": "../assets/CQ-Content/5th/CQ-5th.mp3"
+    "image": "/public/CQ-Content/5th/CQ5-Img.png",
+    "narration": "/public/CQ-Content/5th/CQ-5th.mp3"
   },
   {
     "_id": {
@@ -129,8 +129,8 @@
         "eventRef": ""
       }
     ],
-    "image": "../assets/CQ-Content/6th/CQ6-Img.png",
-    "narration": "../assets/CQ-Content/6th/CQ-6th.mp3"
+    "image": "/public/CQ-Content/6th/CQ6-Img.png",
+    "narration": "/public/CQ-Content/6th/CQ-6th.mp3"
   },
   {
     "_id": {
@@ -144,8 +144,8 @@
         "eventRef": "66df34eb0ecb4efc2bd092e4"
       }
     ],
-    "image": "../assets/CQ-Content/7th/CQ7-Img.png",
-    "narration": "../assets/CQ-Content/7th/CQ-7th.mp3"
+    "image": "/public/CQ-Content/7th/CQ7-Img.png",
+    "narration": "/public/CQ-Content/7th/CQ-7th.mp3"
   },
   {
     "_id": {
@@ -167,8 +167,8 @@
         "eventRef": ""
       }
     ],
-    "image": "../assets/CQ-Content/8th/CQ8-Img.png",
-    "narration": "../assets/CQ-Content/8th/CQ-8th.mp3"
+    "image": "/public/CQ-Content/8th/CQ8-Img.png",
+    "narration": "/public/CQ-Content/8th/CQ-8th.mp3"
   },
   {
     "_id": {
@@ -194,8 +194,8 @@
         "eventRef": ""
       }
     ],
-    "image": "../assets/CQ-Content/9th/CQ9-Img.png",
-    "narration": "../assets/CQ-Content/9th/CQ-9th.mp3"
+    "image": "/public/CQ-Content/9th/CQ9-Img.png",
+    "narration": "/public/CQ-Content/9th/CQ-9th.mp3"
   },
   {
     "_id": {
@@ -221,8 +221,8 @@
         "eventRef": "66df34eb0ecb4efc2bd092e7"
       }
     ],
-    "image": "../assets/CQ-Content/10th/CQ10-Img.png",
-    "narration": "../assets/CQ-Content/10th/CQ-10th.mp3"
+    "image": "/public/CQ-Content/10th/CQ10-Img.png",
+    "narration": "/public/CQ-Content/10th/CQ-10th.mp3"
   },
   {
     "_id": {
@@ -240,8 +240,8 @@
         "eventRef": ""
       }
     ],
-    "image": "../assets/CQ-Content/11th/CQ11-Img.png",
-    "narration": "../assets/CQ-Content/11th/CQ-11th.mp3"
+    "image": "/public/CQ-Content/11th/CQ11-Img.png",
+    "narration": "/public/CQ-Content/11th/CQ-11th.mp3"
   },
   {
     "_id": {
@@ -259,8 +259,8 @@
         "eventRef": ""
       }
     ],
-    "image": "../assets/CQ-Content/12th/CQ12-Img.png",
-    "narration": "../assets/CQ-Content/12th/CQ-12th.mp3"
+    "image": "/public/CQ-Content/12th/CQ12-Img.png",
+    "narration": "/public/CQ-Content/12th/CQ-12th.mp3"
   },
   {
     "_id": {
@@ -282,8 +282,8 @@
         "eventRef": ""
       }
     ],
-    "image": "../assets/CQ-Content/13th/CQ13-Img.png",
-    "narration": "../assets/CQ-Content/13th/CQ-13th.mp3"
+    "image": "/public/CQ-Content/13th/CQ13-Img.png",
+    "narration": "/public/CQ-Content/13th/CQ-13th.mp3"
   },
   {
     "_id": {
@@ -297,8 +297,8 @@
         "eventRef": "66df34eb0ecb4efc2bd092eb"
       }
     ],
-    "image": "../assets/CQ-Content/14th/CQ14-Img.png",
-    "narration": "../assets/CQ-Content/14th/CQ-14th.mp3"
+    "image": "/public/CQ-Content/14th/CQ14-Img.png",
+    "narration": "/public/CQ-Content/14th/CQ-14th.mp3"
   },
   {
     "_id": {
@@ -316,8 +316,8 @@
         "eventRef": ""
       }
     ],
-    "image": "../assets/CQ-Content/15th/CQ15-Img.png",
-    "narration": "../assets/CQ-Content/15th/CQ-15th.mp3"
+    "image": "/public/CQ-Content/15th/CQ15-Img.png",
+    "narration": "/public/CQ-Content/15th/CQ-15th.mp3"
   },
   {
     "_id": {
@@ -335,8 +335,8 @@
         "eventRef": ""
       }
     ],
-    "image": "../assets/CQ-Content/16th/CQ16-Img.png",
-    "narration": "../assets/CQ-Content/16th/CQ-16th.mp3"
+    "image": "/public/CQ-Content/16th/CQ16-Img.png",
+    "narration": "/public/CQ-Content/16th/CQ-16th.mp3"
   },
   {
     "_id": {
@@ -354,8 +354,8 @@
         "eventRef": "66df34eb0ecb4efc2bd092ee"
       }
     ],
-    "image": "../assets/CQ-Content/17th/CQ17-Img.png",
-    "narration": "../assets/CQ-Content/17th/CQ-17th.mp3"
+    "image": "/public/CQ-Content/17th/CQ17-Img.png",
+    "narration": "/public/CQ-Content/17th/CQ-17th.mp3"
   },
   {
     "_id": {
@@ -373,8 +373,8 @@
         "eventRef": ""
       }
     ],
-    "image": "../assets/CQ-Content/18th/CQ18-Img.png",
-    "narration": "../assets/CQ-Content/18th/CQ-18th.mp3"
+    "image": "/public/CQ-Content/18th/CQ18-Img.png",
+    "narration": "/public/CQ-Content/18th/CQ-18th.mp3"
   },
   {
     "_id": {
@@ -392,8 +392,8 @@
         "eventRef": ""
       }
     ],
-    "image": "../assets/CQ-Content/19th/CQ19-Img.png",
-    "narration": "../assets/CQ-Content/19th/CQ-19th.mp3"
+    "image": "/public/CQ-Content/19th/CQ19-Img.png",
+    "narration": "/public/CQ-Content/19th/CQ-19th.mp3"
   },
   {
     "_id": {
@@ -419,8 +419,8 @@
         "eventRef": ""
       }
     ],
-    "image": "../assets/CQ-Content/20th/CQ20-Img.png",
-    "narration": "../assets/CQ-Content/20th/CQ-20th.mp3"
+    "image": "/public/CQ-Content/20th/CQ20-Img.png",
+    "narration": "/public/CQ-Content/20th/CQ-20th.mp3"
   },
   {
     "_id": {
@@ -438,8 +438,8 @@
         "eventRef": ""
       }
     ],
-    "image": "../assets/CQ-Content/21st/CQ21-Img.png",
-    "narration": "../assets/CQ-Content/21st/CQ-21st.mp3"
+    "image": "/public/CQ-Content/21st/CQ21-Img.png",
+    "narration": "/public/CQ-Content/21st/CQ-21st.mp3"
   },
   {
     "_id": {
@@ -457,8 +457,8 @@
         "eventRef": ""
       }
     ],
-    "image": "../assets/CQ-Content/22nd/CQ22-Img.png",
-    "narration": "../assets/CQ-Content/22nd/CQ-22nd.mp3"
+    "image": "/public/CQ-Content/22nd/CQ22-Img.png",
+    "narration": "/public/CQ-Content/22nd/CQ-22nd.mp3"
   },
   {
     "_id": {
@@ -484,8 +484,8 @@
         "eventRef": ""
       }
     ],
-    "image": "../assets/CQ-Content/23rd/CQ23-Img.png",
-    "narration": "../assets/CQ-Content/23rd/CQ-23rd.mp3"
+    "image": "/public/CQ-Content/23rd/CQ23-Img.png",
+    "narration": "/public/CQ-Content/23rd/CQ-23rd.mp3"
   },
   {
     "_id": {
@@ -494,8 +494,8 @@
     "title": "ending event",
     "text": "As you weigh your options, the moral gravity of the situation becomes increasingly apparent. The cosmic heart, with its immense power and its ability to induce severe neurological conditions, poses a threat that could lead to unprecedented destruction if it falls into the wrong hands. Despite its potential benefits, the heart's dark influence has already caused suffering and chaos. After careful consideration and consultation with your remaining crew, you come to a difficult decision: the heart must be destroyed.  With a heavy heart, you set the ship's self-destruct sequence to target the core of the Elysium where the heart is held. The process is fraught with tension; every step is carefully calculated to ensure that the heart's destruction is complete and that no fragment remains to pose a future threat. As you finalize the sequence, you take one last look at the heart, a sentient entity that could have altered the course of humanity's future. The responsibility of this decision weighs heavily, but the potential risks of allowing such power to persist are too great.  The explosion is controlled and precise, obliterating the heart and ensuring that its influence is eradicated. As the debris of the Elysium drifts away, you and your crew reflect on the consequences of your actions. The destruction of the heart, while morally complex, has prevented a potential catastrophe. You’ve sacrificed the possibility of harnessing its power for terraforming or as a weapon to safeguard countless lives and prevent further conflict.  Back at Terra Prime, the government’s reaction is swift and intense. The decision to destroy the heart, intended to be a weapon of unprecedented power, sparks outrage among officials and military leaders who had envisioned its potential for domination. The loss is met with vehement condemnation, and there are allegations of treason and failure. Public sentiment is divided; while some support the move as a necessary action to prevent catastrophe, others view it as a monumental blunder. The government grapples with the fallout, facing both political and operational repercussions. Within your crew, the decision remains controversial. Some view it as a necessary sacrifice for the greater good, while others struggle with the weight of losing the potential for using the heart’s terraforming capabilities to undo some of the environmental devastation caused by War. Despite the internal conflict, you all share a quiet sense of relief that the immediate threat has been neutralized, and the galaxy remains safe from the heart’s dark potential.",
     "choices": [],
-    "image": "../assets/CQ-Content/24th End/CQ24-Img.png",
-    "narration": "../assets/CQ-Content/24th End/CQ-24th.mp3"
+    "image": "/public/CQ-Content/24th End/CQ24-Img.png",
+    "narration": "/public/CQ-Content/24th End/CQ-24th.mp3"
   },
   {
     "title":"Death Screen",
