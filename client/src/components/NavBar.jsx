@@ -2,9 +2,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+const styles= {
+  navBar: {
+backgroundColor: "none"
+  }
+};
+
 const NavBar = () => {
   return (
-    <nav>
+    <nav style={styles.navBar}>
       <div className="nav-btn">
         <Link to="/">Home</Link>
       </div>

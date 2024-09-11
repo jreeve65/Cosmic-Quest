@@ -266,7 +266,8 @@ html, body {
   position: relative;
   /* height: 100vh;  */
   /* Ensures the container fills the viewport height */
-  color: black;
+  color: rgb(219, 213, 213);
+  
   font-family: 'Orbitron', sans-serif;
   text-align: center;
   padding: 20px;
@@ -277,16 +278,18 @@ html, body {
 }
 
 .background-video {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the video covers the entire container */
+  object-fit: cover; 
+  /* Ensures the video covers the entire container */
   z-index: -1; /* Ensures the video stays behind the content */
 }
 
 .content-container {
+  overflow: hidden;
   position: relative;
   z-index: 1; /* Ensures content appears above the video */
 }
@@ -307,7 +310,7 @@ html, body {
 
 .choice-button {
   background-color: var(--nebula-pink);
-  color: var(--silver);
+  color: black;
   border: none;
   border-radius: 10px;
   padding: 10px 20px;
@@ -362,10 +365,10 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, .05);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, .2);
-  border-top: 1px solid rgba(255, 255, 255, .1);
-  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent background for blending */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Darker border for contrast */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Darker border for contrast */
   border-radius: 30px;
   color: #fff;
   z-index: 1;
@@ -374,8 +377,8 @@ html, body {
   text-decoration: none;
   overflow: hidden;
   text-transform: uppercase;
-  transition: all .3s ease-in-out;  
-  backdrop-filter: blur(15px);
+  transition: all 0.3s ease-in-out;  
+  backdrop-filter: blur(15px); /* Adds a blur effect behind the button */
 }
 
 .nav-btn:hover a {
@@ -389,10 +392,9 @@ html, body {
   top: 0;
   width: 50%;
   height: 100%;
-  background: 
-    linear-gradient(to left, rgba(255, 255, 255, .15), transparent);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.2), transparent); /* Subtle gradient effect */
   transform: skewX(40deg) translateX(0);
-  transition: all .5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .nav-btn:hover a::before {
@@ -409,8 +411,7 @@ html, body {
   height: 10px;
   border-radius: 10px;
   background: #f00;
-  transition: all .4s ease-in-out;
-  transition-delay: 0s;
+  transition: all 0.4s ease-in-out;
 }
 
 .nav-btn::before {  
@@ -422,11 +423,11 @@ html, body {
 }
 
 .nav-btn:hover::before,
-.nav-btn:hover::after{  
+.nav-btn:hover::after {  
   height: 50%;
   width: 80%;
   border-radius: 30px;
-  transition-delay: .3s;
+  transition-delay: 0.3s;
 }
 
 .nav-btn:hover::before {
@@ -442,39 +443,23 @@ html, body {
 .nav-btn:nth-child(1)::before,
 .nav-btn:nth-child(1)::after {
   background: linear-gradient(to right, #FF4500, #FF6347); /* Fiery orange-red gradient */
-  box-shadow: 
-    0 0 5px #FF4500,
-    0 0 15px #FF4500,
-    0 0 30px #FF4500,
-    0 0 60px #FF4500;
+  box-shadow: 0 0 5px #FF4500, 0 0 15px #FF4500, 0 0 30px #FF4500, 0 0 60px #FF4500;
 }
 
 .nav-btn:nth-child(2)::before,
 .nav-btn:nth-child(2)::after {
   background: linear-gradient(to right, #FF8C00, #FFD700); /* Intense orange to yellow gradient */
-  box-shadow: 
-    0 0 5px #FF8C00,
-    0 0 15px #FF8C00,
-    0 0 30px #FF8C00,
-    0 0 60px #FF8C00;
+  box-shadow: 0 0 5px #FF8C00, 0 0 15px #FF8C00, 0 0 30px #FF8C00, 0 0 60px #FF8C00;
 }
 
 .nav-btn:nth-child(3)::before,
 .nav-btn:nth-child(3)::after {
   background: linear-gradient(to right, #FF5722, #FFC107); /* Deep orange to bright yellow gradient */
-  box-shadow: 
-    0 0 5px #FF5722,
-    0 0 15px #FF5722,
-    0 0 30px #FF5722,
-    0 0 60px #FF5722;
+  box-shadow: 0 0 5px #FF5722, 0 0 15px #FF5722, 0 0 30px #FF5722, 0 0 60px #FF5722;
 }
 
 .nav-btn:nth-child(4)::before,
 .nav-btn:nth-child(4)::after {
   background: linear-gradient(to right, #BF360C, #FFEB3B); /* Dark red to bright yellow gradient */
-  box-shadow: 
-    0 0 5px #BF360C,
-    0 0 15px #BF360C,
-    0 0 30px #BF360C,
-    0 0 60px #BF360C;
+  box-shadow: 0 0 5px #BF360C, 0 0 15px #BF360C, 0 0 30px #BF360C, 0 0 60px #BF360C;
 }

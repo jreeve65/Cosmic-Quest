@@ -1,4 +1,4 @@
-import spaceVideo from "../assets/videos/space.mp4";
+
 import React, { useEffect, useState } from "react";
 import { createUser, loginUser } from "../services/API";
 import Auth from "../services/auth";
@@ -82,9 +82,7 @@ const Home = () => {
 
   return (
     <div>
-      <video className="video" loop autoPlay preload="true" muted>
-        <source src={spaceVideo} type="video/mp4" />
-      </video>
+      
       <h1 className="CQfont homeTitle mb-5 mt-3">Cosmic Quest</h1>
 
       <div className="container" id="loginForm">
