@@ -44,7 +44,8 @@ Cosmic Quest: [Deployed Website Link]()
 
 ## Built With
 
-[![Static Badge](https://img.shields.io/badge/GitHub-mandi7469-darkgreen)](https://github.com/mandi7469) [![Static Badge](https://img.shields.io/badge/React-18.3.1-blue%20)](https://www.npmjs.com/package/react) [![Static Badge](https://img.shields.io/badge/Vite-5.4.1-purple)](https://www.npmjs.com/package/vite) [![Static Badge](https://img.shields.io/badge/Bootstrap-5.2.3-red)](https://www.npmjs.com/package/bootstrap)
+[<img height="50" width="50" align="center" alt="MongoDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg">](https://www.mongodb.com/docs/compass/current/) [<img height="50" width="50" align="center" alt="Express" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg">](https://expressjs.com/en/starter/installing.html) [<img height="50" width="50" align="center" alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg">](https://react.dev/) [<img height="50" width="50" align="center" alt="Nodejs" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg">](https://nodejs.org/en)
+
 
 ## How to Contribute
 
