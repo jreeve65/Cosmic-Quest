@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { getMe, loadGame, saveGame } from "../services/API";
 import Auth from "../../src/services/auth";
 import { Container, Card, Button, Row, Col } from "react-bootstrap";
+import spaceVideo from "../assets/videos/space.mp4";
 
 const GameCQ = () => {
   const [userData, setUserData] = useState({});
@@ -82,38 +83,40 @@ const GameCQ = () => {
   }
 
   return (
-    <div className="text-light bg-dark p-5">
-      <Container>
+    <div className="game-container">
+      <video className="background-video" loop autoPlay muted>
+        <source src={spaceVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <Container className="content-container">
         {/* Display the current game text */}
         <p className="event-text">{gameData.text}</p>
 
         {/* Display an image if provided */}
         {gameData.image && (
           <div className="image-container">
-            {/* Image element for displaying the game-related image */}
             <img src={gameData.image} alt="Game event" className="event-image" />
           </div>
         )}
 
         {/* Play audio if provided */}
-        {gameData.audio && (
+        {gameData.narration && (
           <div className="audio-container">
-            {/* Audio element for playing game-related audio */}
             <audio controls>
-              <source src={gameData.audio} type="audio/mpeg" />
+              <source src={gameData.narration} type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
           </div>
         )}
 
-        <Row>
+        <Row className="choices-container">
           {/* Map over choices, and handle clicks */}
           {gameData.choices.map((choice) => (
             <Col key={choice.choiceId}>
               <Card>
                 <Card.Body>
                   {/* Button sends the choice ID when clicked */}
-                  <Button variant="primary" onClick={() => clickOption(choice.eventRef)}>
+                  <Button className="choice-button" variant="primary" onClick={() => clickOption(choice.eventRef)}>
                     {choice.choice}
                   </Button>
                 </Card.Body>
