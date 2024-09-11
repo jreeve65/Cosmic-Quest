@@ -69,6 +69,23 @@ const Home = () => {
     const signInButton = document.getElementById("signIn");
     const container = document.getElementById("loginForm");
 
+    // audio stuff
+    const audioStop = document.getElementById("stop-audio")
+    const audioPlay = document.getElementById("play-audio")
+    const audioElement = document.getElementById('game-audio')
+
+    if(audioStop){
+      audioStop.addEventListener("click", () => {
+        audioElement.pause();
+      })
+    }
+    if(audioPlay){
+      audioPlay.addEventListener("click", () => {
+        audioElement.play();
+      })
+    }
+// end of audio stuff
+
     if (signUpButton && signInButton && container) {
       signUpButton.addEventListener("click", () => {
         container.classList.add("right-panel-active");
@@ -85,6 +102,7 @@ const Home = () => {
       <video className="video" loop autoPlay preload="true" muted>
         <source src={spaceVideo} type="video/mp4" />
       </video>
+      
       <h1 className="CQfont homeTitle mb-5 mt-3">Cosmic Quest</h1>
 
       <div className="container" id="loginForm">
@@ -175,10 +193,21 @@ const Home = () => {
               <button className="ghost CQfont mt-3 formButton" id="signUp">
                 Sign Up
               </button>
+
             </div>
           </div>
         </div>
       </div>
+            {/* audio start */}
+            <div className="audio-container">
+            <audio autoplay loop id="game-audio">
+              <source src={`/soundscape/cosmic quest general space ambiance.mp3?t=${new Date().getTime()}`} type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+            <button id="stop-audio" title="pause audio" className="ghost CQfont formButton" style={{padding:"5px", margin:"3px"}}>⏸</button>
+            <button id="play-audio" title="play audio" className="ghost CQfont formButton" style={{padding:"5px", margin:"3px"}}>▶</button>
+          </div>
+          {/* audio end */}
     </div>
   );
 };
