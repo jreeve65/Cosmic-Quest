@@ -113,16 +113,18 @@ const GameCQ = () => {
           </div>
         )}
 
-        <div className="choices-container">
-          {/* Map over choices, and handle clicks */}
-          {gameData.choices.map((choice) => (
-            <div key={choice.choiceId} className="choice-button-wrapper">
-              <button className="choice-button" onClick={() => clickOption(choice.eventRef)}>
-                {choice.choice}
-              </button>
-            </div>
-          ))}
-        </div>
+<div className="choices-container">
+  {gameData.choices.map((choice) => (
+    <div key={choice.choiceId} className="choice-button-wrapper">
+      <button className="choice-button" onClick={() => clickOption(choice.eventRef)}>
+        {choice.choice}
+      </button>
+    </div>
+  ))}
+</div>
+
+
+
       </div>
     </div>
   );

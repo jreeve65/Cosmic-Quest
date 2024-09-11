@@ -302,7 +302,7 @@ html, body {
   margin-bottom: 30px;
 }
 
-.choices-container {
+/* .choices-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -326,23 +326,85 @@ html, body {
 
 .choice-button:active {
   transform: scale(0.95);
-}
-
-.image-container {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.event-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
+} */
 
 .audio-container {
   text-align: center;
   margin: 20px 0;
 }
+
+/* CHOICE OPTION BUTTONS CSS --------------------*/
+/* CHOICE OPTION BUTTONS CSS --------------------*/
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+:root {
+  --d: 2500ms;
+  --c1: rgba(168, 239, 255, 1);
+  --c2: rgba(168, 239, 255, 0.1);
+}
+
+.choices-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.choice-button-wrapper {
+  margin: 0.5rem; /* Adjusted for better spacing */
+}
+
+.choice-button {
+  font-size: 1rem; /* Adjust size as needed */
+  padding: 0.75rem 1.5rem; /* Adjust padding for better sizing */
+  border: 0.35rem solid transparent; /* Make the border transparent initially */
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative; /* Needed for the pseudo-element */
+  overflow: hidden; /* Ensure the pseudo-element does not overflow */
+  display: inline-block; /* Ensure the button dimensions are respected */
+}
+
+.choice-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 0.35rem solid;
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 1;
+  animation: borderRotate var(--d) linear infinite forwards;
+  pointer-events: none; /* Ensures this element does not interfere with button clicks */
+  z-index: 0; /* Ensure it appears behind the button content */
+  box-sizing: border-box; /* Ensure it accounts for padding and border width */
+}
+
+.choice-button:hover {
+  background-color: rgba(63, 63, 63, 0.26);
+  border-color: transparent; /* Hide the border of the button */
+}
+
+.choice-button:active {
+  transform: scale(0.95);
+}
+
+@keyframes borderRotate {
+  100% {
+    --angle: 420deg;
+  }
+}
+
+
 
 
 /* NAV BAR CSS ------------------------------- */
@@ -463,3 +525,31 @@ html, body {
   background: linear-gradient(to right, #BF360C, #FFEB3B); /* Dark red to bright yellow gradient */
   box-shadow: 0 0 5px #BF360C, 0 0 15px #BF360C, 0 0 30px #BF360C, 0 0 60px #BF360C;
 }
+
+/* IMAGE STYLING ------------------*/
+
+/* .image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.event-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+} */
+
+.event-image {
+  transform-style: preserve-3d;
+  background-position: center center;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+}
+.event-image:hover {
+  background-position: 80% 20%;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+
+
+
