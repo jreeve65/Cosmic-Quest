@@ -298,3 +298,163 @@ button.ghost {
 .choice-button:active {
   transform: scale(0.95);
 }
+
+.image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.event-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.audio-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.event-text {
+  margin-bottom: 30px;
+  font-size: 1.2rem; /* Adjust as needed */
+}
+
+
+/* NAV BAR CSS ------------------------------- */
+.nav-btn {
+  position: relative;
+  display: inline-block;
+  border: none;
+  border-radius: 50px;
+  background: none;
+  padding: 15px 55px;
+  margin: 30px;
+}
+
+.nav-btn a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, .05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, .2);
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 30px;
+  color: #fff;
+  z-index: 1;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: all .3s ease-in-out;  
+  backdrop-filter: blur(15px);
+}
+
+.nav-btn:hover a {
+  letter-spacing: 3px;
+}
+
+.nav-btn a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: 
+    linear-gradient(to left, rgba(255, 255, 255, .15), transparent);
+  transform: skewX(40deg) translateX(0);
+  transition: all .5s ease-out;
+}
+
+.nav-btn:hover a::before {
+  transform: skewX(40deg) translateX(200%);
+}
+
+.nav-btn::before,
+.nav-btn::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 10px;
+  border-radius: 10px;
+  background: #f00;
+  transition: all .4s ease-in-out;
+  transition-delay: 0s;
+}
+
+.nav-btn::before {  
+  bottom: -5px;
+}
+
+.nav-btn::after {
+  top: -5px;
+}
+
+.nav-btn:hover::before,
+.nav-btn:hover::after{  
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: .3s;
+}
+
+.nav-btn:hover::before {
+  bottom: 0;
+}
+
+.nav-btn:hover::after {
+  top: 0;
+}
+
+/* Button styles with fire-inspired gradients */
+
+.nav-btn:nth-child(1)::before,
+.nav-btn:nth-child(1)::after {
+  background: linear-gradient(to right, #FF4500, #FF6347); /* Fiery orange-red gradient */
+  box-shadow: 
+    0 0 5px #FF4500,
+    0 0 15px #FF4500,
+    0 0 30px #FF4500,
+    0 0 60px #FF4500;
+}
+
+.nav-btn:nth-child(2)::before,
+.nav-btn:nth-child(2)::after {
+  background: linear-gradient(to right, #FF8C00, #FFD700); /* Intense orange to yellow gradient */
+  box-shadow: 
+    0 0 5px #FF8C00,
+    0 0 15px #FF8C00,
+    0 0 30px #FF8C00,
+    0 0 60px #FF8C00;
+}
+
+.nav-btn:nth-child(3)::before,
+.nav-btn:nth-child(3)::after {
+  background: linear-gradient(to right, #FF5722, #FFC107); /* Deep orange to bright yellow gradient */
+  box-shadow: 
+    0 0 5px #FF5722,
+    0 0 15px #FF5722,
+    0 0 30px #FF5722,
+    0 0 60px #FF5722;
+}
+
+.nav-btn:nth-child(4)::before,
+.nav-btn:nth-child(4)::after {
+  background: linear-gradient(to right, #BF360C, #FFEB3B); /* Dark red to bright yellow gradient */
+  box-shadow: 
+    0 0 5px #BF360C,
+    0 0 15px #BF360C,
+    0 0 30px #BF360C,
+    0 0 60px #BF360C;
+}
+
