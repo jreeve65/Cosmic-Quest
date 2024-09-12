@@ -652,3 +652,58 @@ animation: rotating 4s linear infinite;
     --a: 360deg;
   }
 } */
+
+
+/* ------------------------ CQ INTRO VIDEO PROMPT FOR SELECTION PAGE ---------------------- */
+.video-prompt {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8); /* Dark background with opacity */
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.video-prompt-content {
+  position: relative;
+  width: 80%;
+  max-width: 800px; /* Adjust max-width as needed */
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.video-prompt-close {
+  position: absolute;
+  top: -10px; /* Move it out of the video area */
+  right: -10px; /* Move it out of the video area */
+  width: 40px; /* Increase size */
+  height: 40px; /* Increase size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff; /* White background for contrast */
+  border-radius: 50%; /* Round shape */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+  font-size: 24px; /* Increase size */
+  color: #333; /* Dark color */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.video-prompt-close:hover {
+  background-color: #ff0000; /* Red background on hover */
+  color: #fff; /* White text on hover */
+}
+
+iframe {
+  width: 100%;
+  height: 450px; /* Adjust height as needed */
+  border: none;
+  border-radius: 10px;
+}
