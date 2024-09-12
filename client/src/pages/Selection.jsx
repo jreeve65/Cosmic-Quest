@@ -10,6 +10,10 @@ const Selection = () => {
     gameButton.addEventListener("click", () => {
       navigate("/GameCQ"); // Ensure the path matches your routing setup
     });
+    const tipButton = document.getElementById("tip-button");
+    tipButton.addEventListener("click", () => {
+      navigate("/Stripe"); // Ensure the path matches your routing setup
+    });
         // audio stuff
         const audioStop = document.getElementById("stop-audio")
         const audioPlay = document.getElementById("play-audio")
@@ -63,6 +67,14 @@ const Selection = () => {
               style={{ fontFamily: "Orbitron" }}
             >
               Logout
+            </button>
+            <button
+              className="btn btn-light p-3"
+              type="button"
+              style={{ fontFamily: "Orbitron" }}
+              id="tip-button"
+            >
+              Tip Us
             </button>
           </div>
         </div>
