@@ -22,17 +22,11 @@ const NavBar = () => {
         <Link to="/about">About</Link>
       </div>
       <div className="nav-btn">
-        <Link to="/contact">Contact</Link>
+        <Link to="/stripe">Tip Us</Link>
       </div>
       <div className="nav-btn">
-        <Link to="/game">Game</Link>
+        <Link to="/gamecq">Game</Link>
       </div>
-
-<div id='stripe' className='nav-btn'>
-<div style={styles.right}>
-<Link to="https://buy.stripe.com/7sI01I6jx8Hx4mc288">Tip Us</Link>
-</div>
-</div>
     </nav>
     </>
   );

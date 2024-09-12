@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import Selection from './pages/Selection'; 
 import GameCQ from './pages/GameCQ'; 
 import Stripe from './pages/Stripe'; 
+import About from './pages/About'; 
 
 
 
@@ -37,6 +38,11 @@ const router = createBrowserRouter([
       {
         path: '/stripe',
         element: <Stripe />
+
+      },
+      {
+        path: '/about',
+        element: <About />
 
       },
     ],
