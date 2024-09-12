@@ -196,15 +196,30 @@ const Home = () => {
         </div>
       </div>
             {/* audio start */}
-            <div className="audio-container">
+            {/* <div className="audio-container">
             <audio autoplay loop id="game-audio">
               <source src={`/soundscape/cosmic quest general space ambiance.mp3?t=${new Date().getTime()}`} type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
             <button id="stop-audio" title="pause audio" className="ghost CQfont formButton" style={{padding:"5px", margin:"3px"}}>⏸</button>
             <button id="play-audio" title="play audio" className="ghost CQfont formButton" style={{padding:"5px", margin:"3px"}}>▶</button>
-          </div>
+          </div> */}
+
+          <div className="audio-container">
+        <audio autoPlay loop id="game-audio">
+          <source src={`/soundscape/cosmic quest general space ambiance.mp3?t=${new Date().getTime()}`} type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <button id="stop-audio" title="pause audio" className="ghost CQfont formButton" style={{ padding: "5px", margin: "3px" }}>
+          ⏸
+        </button>
+        <button id="play-audio" title="play audio" className="ghost CQfont formButton" style={{ padding: "5px", margin: "3px" }}>
+          ▶
+        </button>
+      </div>
           {/* audio end */}
+
+
     </div>
   );
 };
