@@ -253,7 +253,7 @@ button.ghost {
   font-size: 40px;
 }
 
-/* Game Page CSS ----------------------------------------------------*/
+/* ------------------------ Game Page CSS -------------------------------*/
 
 html, body {
   height: 100%;
@@ -288,20 +288,52 @@ html, body {
   z-index: -1; /* Ensures the video stays behind the content */
 }
 
-.content-container {
+/* Default CSS for Event Text */
+/* .content-container {
   overflow: hidden;
   position: relative;
-  z-index: 1; /* Ensures content appears above the video */
-}
+  z-index: 1;
+  /* Ensures content appears above the video */
+/* } */
 
-.event-title {
-  margin-bottom: 20px;
-}
-
-.event-text {
+/* .event-text {
   margin-bottom: 30px;
+} */
+
+
+/* ----------------------- EVENT TEXT CSS ---------------------------- */
+.event-text {
+  margin: 0; /* Removes default margin */
+  padding: 1rem; /* Adds padding inside the text element */
+  font-size: 1.2rem; /* Adjust font size for readability */
+  line-height: 1.5; /* Increases line height for better readability */
+  color: #ffffffd3; /* Sets text color to white for contrast */
+  background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background for readability */
+  border-radius: 0.5rem; /* Rounds the corners of the text background */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5); /* Adds shadow for better visual separation */
+  text-align: justify; /* Left-aligns the text */
+  max-width: 90%; /* Ensures the text block is responsive and doesn’t overflow */
+  width: auto; /* Ensures the text block width is flexible */
+  box-sizing: border-box; /* Ensures padding and border are included in the element’s total width and height */
 }
 
+/* Media Queries for additional responsiveness */
+@media (max-width: 768px) {
+  .event-text {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    padding: 0.75rem; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .event-text {
+    font-size: 0.9rem; /* Further adjust font size for very small screens */
+    padding: 0.5rem; /* Further adjust padding for very small screens */
+  }
+}
+
+
+/* Default Choice Button CSS: */
 /* .choices-container {
   display: flex;
   flex-direction: column;
@@ -333,8 +365,8 @@ html, body {
   margin: 20px 0;
 }
 
-/* CHOICE OPTION BUTTONS CSS --------------------*/
-/* CHOICE OPTION BUTTONS CSS --------------------*/
+/* --------------------- CHOICE OPTION BUTTONS CSS --------------------*/
+
 @property --angle {
   syntax: '<angle>';
   initial-value: 90deg;
@@ -363,10 +395,11 @@ html, body {
   padding: 0.75rem 1.5rem; /* Adjust padding for better sizing */
   border: 0.35rem solid transparent; /* Make the border transparent initially */
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.336);
+  color: #ffffffd3; /* Sets text color to white for contrast */
+  ;
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   cursor: pointer;
   position: relative; /* Needed for the pseudo-element */
   overflow: hidden; /* Ensure the pseudo-element does not overflow */
@@ -407,7 +440,7 @@ html, body {
 
 
 
-/* NAV BAR CSS ------------------------------- */
+/* ------------------------------ NAV BAR CSS ------------------------------- */
 .nav-btn {
   position: relative;
   display: inline-block;
@@ -526,8 +559,10 @@ html, body {
   box-shadow: 0 0 5px #BF360C, 0 0 15px #BF360C, 0 0 30px #BF360C, 0 0 60px #BF360C;
 }
 
-/* IMAGE STYLING ------------------*/
+/* -------------------------IMAGE STYLING -------------------------*/
 
+
+/* Default CSS for Image: */
 /* .image-container {
   text-align: center;
   margin: 20px 0;
@@ -539,17 +574,81 @@ html, body {
   border-radius: 10px;
 } */
 
+/* The Transition Rotation on Image CSS: */
 .event-image {
   transform-style: preserve-3d;
   background-position: center center;
   transition: all 0.5s ease-in-out;
   border-radius: 10px;
+  position: relative;
 }
+
 .event-image:hover {
   background-position: 80% 20%;
   transform: rotate3d(0.5, 1, 0, 30deg);
 }
 
+@media (max-width: 768px) {
+  .event-image {
+    border-radius: 8px; /* Slightly smaller border-radius on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .event-image {
+    border-radius: 5px; /* Even smaller border-radius on very small screens */
+  }
+}
+/* Responsive on all devices: */
+.content-container {
+  overflow: hidden; /* Prevents overflow within this container */
+  position: relative;
+  z-index: 1; /* Ensures content appears above other layers */
+  max-width: 100%; /* Makes sure the container doesn't exceed the viewport width */
+}
 
 
+/* Attempted to add Glow border to the Image */
+/* 
+.event-image::before {
+content: '';
+position: absolute;
+inset: 0;
+background: repeating-conic-gradient(from var(--a), #0f0,#ff0,#0ff,#f0f,#0ff);
+border-radius: 20px;
+animation: rotating 4s linear infinite;
+}
 
+.event-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(from var(--a), #0f0,#ff0,#0ff,#f0f,#0ff);
+  border-radius: 20px;
+  animation: rotating 4s linear infinite;
+  filter: blur(40px);
+  opacity: 0.75;
+  }
+
+  .event-image span {
+    position: absolute;
+    inset: 4px;
+    background: #222;
+    border-radius: 16px;
+    z-index: 1;
+  }
+
+@property --a {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes rotating {
+  0% {
+    --a: 0deg;
+  }
+  100% {
+    --a: 360deg;
+  }
+} */
