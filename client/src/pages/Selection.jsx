@@ -8,6 +8,7 @@ const Selection = () => {
 
   useEffect(() => {
     const gameButton = document.getElementById("gameButton");
+
     const audioStop = document.getElementById("stop-audio");
     const audioPlay = document.getElementById("play-audio");
     const audioElement = document.getElementById("game-audio");
@@ -48,6 +49,7 @@ const Selection = () => {
         audioPlay.removeEventListener("click", handleAudioPlay);
       }
     };
+
   }, [navigate]);
 
   const handleVideoButtonClick = () => {
@@ -93,6 +95,14 @@ const Selection = () => {
               style={{ fontFamily: "Orbitron" }}
             >
               Logout
+            </button>
+            <button
+              className="btn btn-light p-3"
+              type="button"
+              style={{ fontFamily: "Orbitron" }}
+              id="tip-button"
+            >
+              Tip Us
             </button>
           </div>
         </div>
