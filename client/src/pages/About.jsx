@@ -28,7 +28,7 @@ The fate of humanity and the universe is in your hands.
 <ul><a href="https://github.com/mandi7469">Amanda Changa</a></ul>
 <ul><a href="https://github.com/hestrain">HeatherEllen Strain</a></ul>
 <ul><a href="https://github.com/JamesWilliamParker">James Parker</a></ul>
-<ul><a href="https://github.com/jreeve65">Jordan Reeves</a></ul>
+<ul><a href="https://github.com/jreeve65">Jordan Reeve</a></ul>
       </div>
     </div>
   );
