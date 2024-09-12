@@ -98,7 +98,7 @@ const GameCQ = () => {
 
         {/* Display an image if provided */}
         {gameData.image && (
-          <div className="image-container">
+          <div className="image-container"><span></span>
             <img src={gameData.image} alt="Game event" className="event-image" />
           </div>
         )}
