@@ -10,6 +10,7 @@ import Error from './pages/Error';
 import Home from './pages/Home'; 
 import Selection from './pages/Selection'; 
 import GameCQ from './pages/GameCQ'; 
+import Stripe from './pages/Stripe'; 
 
 
 
@@ -31,6 +32,11 @@ const router = createBrowserRouter([
       {
         path: '/gamecq',
         element: <GameCQ />
+
+      },
+      {
+        path: '/stripe',
+        element: <Stripe />
 
       },
     ],

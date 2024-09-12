@@ -5,11 +5,15 @@ import { Link } from 'react-router-dom';
 const styles= {
   navBar: {
 backgroundColor: "none"
+  },
+  right:{
+alignItems:"right"
   }
 };
 
 const NavBar = () => {
   return (
+    <>
     <nav style={styles.navBar}>
       <div className="nav-btn">
         <Link to="/">Home</Link>
@@ -23,7 +27,14 @@ const NavBar = () => {
       <div className="nav-btn">
         <Link to="/game">Game</Link>
       </div>
+
+<div id='stripe' className='nav-btn'>
+<div style={styles.right}>
+<Link to="https://buy.stripe.com/7sI01I6jx8Hx4mc288">Tip Us</Link>
+</div>
+</div>
     </nav>
+    </>
   );
 };
 
