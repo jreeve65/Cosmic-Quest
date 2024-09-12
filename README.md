@@ -19,7 +19,7 @@ Your journey will take you to distant planets, each with its own unique challeng
 
 The fate of humanity and the universe is in your hands.
 
-[Play Now!](placeholder-deployed-url)
+[Play Now!](https://cosmic-quest.onrender.com/)
 
 ## Table of Contents
 - [About the Project](#about-the-project)
@@ -40,12 +40,12 @@ The fate of humanity and the universe is in your hands.
 [<img height="50" width="50" align="center" alt="Nodejs" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg">](https://nodejs.org/en)
 
 ## Installation
-You do not have to install Cosmic Quest to play the game, you can visit it live online at [This Link](placeholder-deployed-url)
+You do not have to install Cosmic Quest to play the game, you can visit it live online at [This Link](https://cosmic-quest.onrender.com/)
 
 However, if you'd like to ruin it locally instead, please follow the below instructions: 
 
 1. Clone project repository down into your desired directory
-2. Open project terminal in the root level and run the command `npm install` to install the packages and dependencies. Installing in the root level will install the dependncies and packages for both the Client and Server
+2. Open project terminal in the root level and run the command `npm install` to install the packages and dependencies. Installing in the root level will install the dependencies and packages for both the Client and Server
 3. In that same terminal, run the command `npm run develop`, this will concurrently start the Client and Server
 4. Visit the application at https://localhost:3000
 
@@ -65,7 +65,7 @@ GitHub: [James Parker](https://github.com/JamesWilliamParker)
 
 GitHub: [Jordan Reeve](https://github.com/jreeve65)
 
-Cosmic Quest: [Deployed Website Link](placeholder-deployed-url)
+Cosmic Quest: [Deployed Website Link](https://cosmic-quest.onrender.com/)
 
 
 
